@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="750.0" style="-fx-background-color: #46857e;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <AnchorPane prefHeight="105.0" prefWidth="750.0" style="-fx-background-color: #FFEE99;">
+      <Label layoutX="375.0" layoutY="29.0" text="Welcome!">
+         <font>
+            <Font name="Bauhaus 93" size="40.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+   <AnchorPane layoutY="-5.0" prefHeight="705.0" prefWidth="200.0" style="-fx-background-color: #112840;">
+      <Text fill="WHITE" layoutX="40.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Widget">
+         <font>
+            <Font name="Bauhaus 93" size="38.0" />
+         </font>
+      </Text>
+      <Separator layoutY="108.0" prefWidth="200.0" />
+      <VBox layoutY="108.0" prefHeight="420.0" prefWidth="200.0">
+         <Button fx:id="LogInWeather" mnemonicParsing="false" prefHeight="47.0" prefWidth="203.0" text="Weather">
+            <VBox.margin>
+               <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Button fx:id="LogInCovid" mnemonicParsing="false" prefHeight="47.0" prefWidth="219.0" text="Covid Situation">
+            <VBox.margin>
+               <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Button fx:id="LogInTest" mnemonicParsing="false" prefHeight="47.0" prefWidth="225.0" text="Java Test">
+            <VBox.margin>
+               <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Button fx:id="LogInCurrency" mnemonicParsing="false" prefHeight="47.0" prefWidth="197.0" text="Currency">
+            <VBox.margin>
+               <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Button fx:id="LogInGame" mnemonicParsing="false" prefHeight="47.0" prefWidth="285.0" text="Game">
+            <VBox.margin>
+               <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+            </VBox.margin>
+            <padding>
+               <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Button>
+         <Separator prefWidth="200.0" />
+      </VBox>
+      <Button fx:id="LogOutProg" layoutX="15.0" layoutY="606.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="Exit program">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </AnchorPane>
+   <ImageView fx:id="image1" fitHeight="150.0" fitWidth="425.0" layoutX="200.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/weather-icons.jpg" />
+   </ImageView>
+   <ImageView fx:id="image2" fitHeight="267.0" fitWidth="267.0" layoutX="200.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/Java.jpg" />
+   </ImageView>
+   <ImageView fx:id="image3" fitHeight="188.0" fitWidth="267.0" layoutX="200.0" layoutY="522.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../image/currency.jpg" />
+   </ImageView>
+   <ImageView fx:id="image4" fitHeight="184.0" fitWidth="283.0" layoutX="467.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/anime-girl-cyberpunk-ride-4k-lx.jpg" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="image5" fitHeight="256.0" fitWidth="283.0" layoutX="467.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../image/images.jpg" />
+      </image>
+   </ImageView>
+</AnchorPane>

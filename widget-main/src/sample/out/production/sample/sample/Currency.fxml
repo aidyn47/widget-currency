@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="750.0" style="-fx-background-color: #46857e;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CurrencyController">
+    <AnchorPane prefHeight="105.0" prefWidth="750.0" style="-fx-background-color: #FFEE99;">
+        <children>
+            <Text layoutX="404.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currency">
+                <font>
+                    <Font name="Bauhaus 93" size="40.0" />
+                </font>
+            </Text>
+        </children>
+    </AnchorPane>
+    <AnchorPane layoutY="-5.0" prefHeight="705.0" prefWidth="200.0" style="-fx-background-color: #112840;">
+        <Text fill="WHITE" layoutX="40.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Widget">
+            <font>
+                <Font name="Bauhaus 93" size="38.0" />
+            </font>
+        </Text>
+        <Separator layoutY="108.0" prefWidth="200.0" />
+        <VBox layoutY="108.0" prefHeight="420.0" prefWidth="200.0">
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="203.0" text="Weather">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="219.0" text="Covid Situation">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="225.0" text="Java Test">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="197.0" text="Currency">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="285.0" text="Game">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Separator prefWidth="200.0" />
+        </VBox>
+        <Button layoutX="15.0" layoutY="606.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="Go back">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </AnchorPane>
+   <Text fx:id="USD" layoutX="270.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USD">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </Text>
+   <Text fx:id="EUR" layoutX="272.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EUR">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </Text>
+   <Text fx:id="RUB" layoutX="271.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RUB">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </Text>
+   <Text fx:id="KGZ" layoutX="272.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KGS">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </Text>
+   <TextField fx:id="KGZconvert" layoutX="354.0" layoutY="205.0" prefHeight="33.0" prefWidth="158.0" />
+   <Button fx:id="ConvertButton" layoutX="530.0" layoutY="204.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="74.0" text="Convert" />
+</AnchorPane>

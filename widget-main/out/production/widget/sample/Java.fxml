@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="750.0" style="-fx-background-color: #46857e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JavaController">
+    <AnchorPane prefHeight="105.0" prefWidth="750.0" style="-fx-background-color: #FFEE99;">
+      <children>
+            <Text layoutX="232.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Java question!!">
+                <font>
+                    <Font name="Bauhaus 93" size="40.0" />
+                </font>
+            </Text>
+      </children>
+    </AnchorPane>
+    <AnchorPane layoutY="-5.0" prefHeight="705.0" prefWidth="200.0" style="-fx-background-color: #112840;">
+        <Text fill="WHITE" layoutX="40.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Widget">
+            <font>
+                <Font name="Bauhaus 93" size="38.0" />
+            </font>
+        </Text>
+        <Separator layoutY="108.0" prefWidth="200.0" />
+        <VBox layoutY="108.0" prefHeight="420.0" prefWidth="200.0">
+            <Button fx:id="LogInWeather" mnemonicParsing="false" prefHeight="47.0" prefWidth="203.0" text="Weather">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="LogInCovid" mnemonicParsing="false" prefHeight="47.0" prefWidth="219.0" text="Covid Situation">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="LogInTest" mnemonicParsing="false" prefHeight="47.0" prefWidth="225.0" text="Java Test">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Button fx:id="LogInCurrency" mnemonicParsing="false" prefHeight="47.0" prefWidth="197.0" text="Currency">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="285.0" text="Game">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="10.0" right="10.0" top="15.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                </padding>
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Button>
+            <Separator prefWidth="200.0" />
+        </VBox>
+        <Button fx:id="GoBackButton" layoutX="15.0" layoutY="606.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="170.0" text="Go back">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </AnchorPane>
+   <RadioButton fx:id="radio_btn_1" layoutX="261.0" layoutY="296.0" mnemonicParsing="false" selected="true" text="Console.Write()">
+      <font>
+         <Font size="16.0" />
+      </font>
+      <toggleGroup>
+         <ToggleGroup fx:id="answer" />
+      </toggleGroup>
+   </RadioButton>
+   <RadioButton fx:id="radio_btn_2" layoutX="261.0" layoutY="346.0" mnemonicParsing="false" selected="true" text="&quot;console.log()&quot;" toggleGroup="$answer">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </RadioButton>
+   <RadioButton fx:id="radio_btn_3" layoutX="261.0" layoutY="396.0" mnemonicParsing="false" selected="true" text="print()" toggleGroup="$answer">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </RadioButton>
+   <RadioButton fx:id="radio_btn_4" layoutX="261.0" layoutY="446.0" mnemonicParsing="false" selected="true" text="System.out.println()" toggleGroup="$answer">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </RadioButton>
+   <Text layoutX="267.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Java proficiency test" wrappingWidth="448.3184814453125">
+      <font>
+         <Font name="Calibri" size="44.0" />
+      </font>
+   </Text>
+   <Text fx:id="question_text" layoutX="261.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="В каком из вариантов представлен корректный формат вывода информации на экран?" wrappingWidth="459.47003173828125">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <Button fx:id="answerBtn" layoutX="320.0" layoutY="538.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="256.0" text="To answer">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Button>
+</AnchorPane>
